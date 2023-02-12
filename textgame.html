@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,70 +8,84 @@
     <title>Liam Salmon's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="fish-icon.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div class="container d-flex flex-column flex-md-row">
-    <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
-      <a href="index.html">
-      <img class="logo" src="fish-icon.png" alt="logo" width="30px"> 
-      </a>
-      <button
-      class="navbar-toggler" type="button" 
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle Navigation">
-             <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container d-flex flex-column flex-md-row">
+        <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
+            <a href="index.html">
+                <img class="logo" src="fish-icon.png" alt="logo" width="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-        <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
-            <li>
-              <a href="index.html" class="nav-link" aria-current="page">Main</a>
-            </li>
-            <li>
-                <a href="testimonials.html" class="nav-link">Testimonials</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="javaquiz.html">JS Quiz</a></li>
-                  <li><a class="dropdown-item" href="textgame.html">Text Game</a></li>
+            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
+                    <li id="navOpt">
+                        <a href="index.html" class="nav-link" aria-current="page">Main</a>
+                    </li>
+                    <li id="navOpt">
+                        <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li id="navOpt"><a class="dropdown-item" href="javaquiz.html">JS Quiz</a></li>
+                            <li id="navOpt"><a class="dropdown-item" href="#">Current</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
-              </li>
-            
-        </ul>
-      </div>
+            </div>
 
-    </nav>
-    <main class="ps-0 ps-md-0 flex-grow-1">
-      <section>
-        <div class="grid-section-1 header">
-          <h1>Liam Salmon</h1>
-          <h5>Projects</h5>
-        </div>
-        <div class="project" id="textgame">
-        <div class="grid-section-2">
-            <p>The objective of this project was to better understand Object Oriented Programming by making a text based adventure game centered on a single HTML page.</p>
-            <p>In order to do this I first created the initial HTML, I then created a few JavaScript classes to function as rooms, characters and items respectively. After, using the previously established setter feature(assigned at class creation for assigning attributes) I fleshed out the Room class with its name, a description, the characters / items inside and rooms linked to it (and the direction). I then created a function for later use that checked which rooms were linked. </p>
-            <p>I then created content for the item and character classes, linked those to rooms and created a function to provide the name/description of the room you're in, the direction of any linked rooms, any characters and or items you may find (This function would then replace the relevant html info with the provided descriptions). After which, I then created a function for movement, which would accept inputs of north/east/south/west and provided it matched the direction of a linked room, would allow you to move to that room, providing you with a new room description etc.</p> 
-        </div>
-        <div class="grid-section-3">
-            
-        </div>
-        </div>
-      </section>
-      <section id="textgame">
-        <h3>JavaScript Text Game (scroll in the window)</h3>
-        <iframe src="https://elsammen.github.io/javatextgame/" title="JavaTextGame" class="iframe"></iframe><br>
-        <a target="_blank" href="https://github.com/ElSammen/javatextgame">GitHub Repo</a>
-      </section>
-    </main>
-  </div>  
+        </nav>
+        <main class="ps-0 ps-md-0 flex-grow-1">
+            <section>
+                <div class="grid-section-1 header">
+                    <h1 id="heading">Liam Salmon</h1>
+                    <h5>Projects</h5>
+                </div>
+                <div class="project" id="textgame">
+                    <div class="grid-section-2">
+                        <p>The objective of this project was to better understand Object Oriented Programming by making
+                            a text based adventure game centered on a single HTML page.</p>
+                        <p>In order to do this I first created the initial HTML, I then created a few JavaScript classes
+                            to function as rooms, characters and items respectively. After, using the previously
+                            established setter feature(assigned at class creation for assigning attributes) I fleshed
+                            out the Room class with its name, a description, the characters / items inside and rooms
+                            linked to it (and the direction). I then created a function for later use that checked which
+                            rooms were linked. </p>
+                        <p>I then created content for the item and character classes, linked those to rooms and created
+                            a function to provide the name/description of the room you're in, the direction of any
+                            linked rooms, any characters and or items you may find (This function would then replace the
+                            relevant html info with the provided descriptions). After which, I then created a function
+                            for movement, which would accept inputs of north/east/south/west and provided it matched the
+                            direction of a linked room, would allow you to move to that room, providing you with a new
+                            room description etc.</p>
+                    </div>
+                    <div class="grid-section-3">
+
+                    </div>
+                </div>
+            </section>
+            <section id="textgame">
+                <h3>JavaScript Text Game (scroll in the window for input box)</h3>
+                <iframe src="https://elsammen.github.io/javatextgame/" title="JavaTextGame" class="iframe"></iframe><br>
+                <a target="_blank" href="https://github.com/ElSammen/javatextgame">GitHub Repo</a>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
